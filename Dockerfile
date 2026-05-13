@@ -15,5 +15,4 @@ RUN chmod +x FirstGameSERVER.x86_64
 
 EXPOSE 10000/tcp
 
-CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless"] 
-#### --server --port $PORT"]
+CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless --server --port $PORT"]
