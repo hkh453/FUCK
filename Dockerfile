@@ -13,7 +13,7 @@ COPY FirstGameSERVER.x86_64 .
 COPY FirstGameSERVER.pck .
 RUN chmod +x FirstGameSERVER.x86_64
 
-EXPOSE 0/udp
+EXPOSE 0/tcp
 
 CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless"] 
 #### --server --port $PORT"]
