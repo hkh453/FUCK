@@ -1,11 +1,11 @@
-#FROM debian:bookworm-slim
+FROM debian:bookworm-slim
 
-#RUN apt-get update && apt-get install -y \
-#    ca-certificates \
-#    libstdc++6 \
-#    libgcc-s1 \
-#    fontconfig \
-#    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    libstdc++6 \
+    libgcc-s1 \
+    fontconfig \
+    && rm -rf /var/lib/apt/lists/*
 
 #WORKDIR /app
 
@@ -17,7 +17,7 @@
 
 #CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless --server --port $PORT"]
 
-FROM debian:bookworm-slim
+#FROM debian:bookworm-slim
 
 WORKDIR /app
 
