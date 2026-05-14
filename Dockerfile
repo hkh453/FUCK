@@ -33,4 +33,5 @@ RUN chmod +x FirstGameSERVER.x86_64
 #EXPOSE 4433
 # CMD ["./UnnamedProject.x86_64", "--headless", "--server", "--port", "4433"]
 #CMD ["sh", "-c", "./UnnamedProject.x86_64 --headless"]
-CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless --server --bind 0.0.0.0 --port $PORT"]
+#CMD ["sh", "-c", "./FirstGameSERVER.x86_64 --headless --server --bind 0.0.0.0 --port $PORT"]
+CMD ["sh", "-c", "echo PORT=$PORT && ./UnnamedProject.x86_64 --headless --server --port $PORT"]
